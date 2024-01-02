@@ -12,10 +12,10 @@
 use sakila;
 SELECT rating FROM film;
 SELECT release_year FROM film;
-select * from film where title like '%ARMAGEDDON%';
+select title FROM film where title LIKE '%ARMAGEDDON%'; 
 select * from film where title like '%APOLLO%';
 select * from film where title like '%APOLLO';
-select * from film where title like '%DATE%';
+SELECT film_id, title FROM film WHERE title LIKE '%DATE%';
 select * from film order by length(title) desc limit 10;
 select * from film order by length desc limit 10;
 select count(*) from film where special_features like 'Behind the Scenes content';
